@@ -23,41 +23,41 @@ Follow these steps to set up and run the backend service locally:
 
 1. **Clone the Repository:**
 
-   \`\`\`bash
+   ```bash
    git clone https://github.com/your-repository/ai-vacation-planner-node-backend.git
    cd ai-vacation-planner-node-backend
-   \`\`\`
+   ```
 
 2. **Install Dependencies:**
 
    Run the following command to install all required dependencies:
 
-   \`\`\`bash
+   ```bash
    npm install
-   \`\`\`
+   ```
 
-   Or, if you're using \`yarn\`:
+   Or, if you're using `yarn`:
 
-   \`\`\`bash
+   ```bash
    yarn install
-   \`\`\`
+   ```
 
 
 4. **Running the Service:**
 
    Once everything is set up, you can run the backend with:
 
-   \`\`\`bash
+   ```bash
    npm start
-   \`\`\`
+   ```
 
-   Or, with \`yarn\`:
+   Or, with `yarn`:
 
-   \`\`\`bash
+   ```bash
    yarn start
-   \`\`\`
+   ```
 
-   This will start the service on \`http://localhost:8080\` (or another port, depending on your configuration).
+   This will start the service on `http://localhost:8080\` (or another port, depending on your configuration).
 
 ## Usage
 
@@ -65,14 +65,14 @@ Once the backend is running, it will act as a proxy for the Android app to gener
 
 ### Example Request
 
-You can test the backend by making a \`POST\` request to it. Here's an example using \`curl\`:
+You can test the backend by making a `POST` request to it. Here's an example using `curl`:
 
-\`\`\`bash
+```bash
 curl -X POST http://localhost:8080/api/v1/itinerary -H "Content-Type: application/json" -d '{
     "destination": "New York",
     "duration": 3
 }'
-\`\`\`
+```
 
 This will trigger the backend to request itinerary suggestions from the Groq service based on the location and duration provided.
 
